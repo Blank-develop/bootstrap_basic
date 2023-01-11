@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="w-300 p-3 shadow mb-5">
+       <div class="container d-flex justify-content-sm-between">
+        <h2 class="mb-0">Blank-Laos</h2>
+        <div>
+            <div class="btn btn-outline-primary">Sign up</div>
+            <div class="btn btn-primary">Sign in</div>
+        </div>
+       </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  Dashboard
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active">Product</a>
+                <a href="#" class="list-group-item list-group-item-action">Bill</a>
+                <a href="#" class="list-group-item list-group-item-action">Customer</a>
+                <a href="#" class="list-group-item list-group-item-action">Chat</a>
+                <a href="#" class="list-group-item list-group-item-action">Logout</a>
+              </div>
+    
+        </div>
+        <div class="col-12 col-sm-9" >
+            <div class="d-flex justify-content-sm-between">
+           <h2 class="mb-0">Product</h2>
+           <div class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#md_addProduct">Add Product</div>
+            </div>
+            <input class="form-control mt-3 w-25 mb-3" type="text" placeholder="Search..." >
+            <div class="card">
+                <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <img src="computer.jpg" class="rounded" style="width:70px; height: 35px; object-fit: cover">
+                        </td>
+                        <td>Computer</td>
+                        <td>1234</td>
+                        <td>199$</td>
+                        <td class="text-danger">10</td>
+                        <td>
+                            <span class="btn btn-success btn-sm">Active</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=734&q=80" class="rounded" style="width:70px; height: 35px; object-fit: cover">
+                        </td>
+                        <td>Computer</td>
+                        <td>1234</td>
+                        <td>199$</td>
+                        <td class="text-danger">10</td>
+                        <td>
+                            <span class="btn btn-danger btn-sm">Active</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+    
+            </div>
+             </div>
+         
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="md_addProduct">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add Product </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <div class="mb-3">
+                <span>Product Name</span>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
